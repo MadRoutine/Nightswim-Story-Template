@@ -1,3 +1,24 @@
 [
-
+    {
+        "locID": "start",
+        "name": "",
+        "accessMsg": "unlocked",
+        "locImg": "no_bg",
+        "locSnd": "no_sound",
+        "cutscenes": {},
+        "scenes": {},
+        "content": [
+            {
+                "sectionHTML": "First location!",
+                "conditions": [],
+                "consequences": [],
+                "delay": 0
+            }
+        ],
+        "styling": {
+            "containerClass": "",
+            "buttonClass": "",
+            "bgClass": ""
+        }
+    }
 ]
