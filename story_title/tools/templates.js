@@ -163,8 +163,8 @@ let templates = {
         "sectionHTML": "ThisTextWillAppearAndStay ",
         "type": "add",
         "duration": 1000,
-        "inAnim": "fade",
-        "outAnim": "persist",
+        "inAnim": 500,
+        "outAnim": -1,
         "playSoundfile": "no_sound",
         "onEnd": "nothing"
     },
@@ -172,8 +172,8 @@ let templates = {
         "sectionHTML": "ThisTextWillReplaceThePreviousOneAndFadeOut ",
         "type": "replace",
         "duration": 3000,
-        "inAnim": "fade",
-        "outAnim": "fade",
+        "inAnim": 500,
+        "outAnim": 500,
         "playSoundfile": "no_sound",
         "onEnd": "nothing"
     }
@@ -186,9 +186,9 @@ let templates = {
         "sectionHTML": "text",
         "type": "addOrReplace",
         "duration": 1000,
-        "inAnim": "fade_or_AnythingElseToNotFade",
-        "outAnim": "persist_or_fade_or_anythingElseToNotFadeorPersist",
-        "playSoundfile": "no",
+        "inAnim": 0,
+        "outAnim": 0,
+        "playSoundfile": "no_sound",
         "onEnd": "nothing"
     }`
                     },
