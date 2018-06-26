@@ -247,7 +247,7 @@ let templates = {
                         name: "state",
                         content: `    {
         "type": "state",
-        "obj": "objID, npcID, or player"
+        "obj": "objID, npcID, or player",
         "value": "state",
         "failMsg": "messageWhenConditionIsntMet"
     }`
@@ -260,6 +260,16 @@ let templates = {
         "storySetting": "nameOfSetting",
         "value": 0,
         "compare": "larger/equal/smaller",
+        "failMsg": "messageWhenConditionIsntMet"
+    }`
+                    },
+                    {
+                        id: "cond_visited",
+                        name: "visited",
+                        content: `    {
+        "type": "visited",
+        "loc": "locID",
+        "value": 1,
         "failMsg": "messageWhenConditionIsntMet"
     }`
                     }
@@ -334,7 +344,7 @@ let templates = {
                     },
                     {
                         id: "change_int",
-                        name: "changeNpcInter..",
+                        name: "changeNpcInteraction",
                         content: `    {
         "type": "changeNpcInteraction",
         "npc": "NpcID",
@@ -409,6 +419,14 @@ let templates = {
                         content: `    {
         "type": "fadeOut",
         "id": "htmlID"
+    }`
+                    },
+                    {
+                        id: "change_playsound",
+                        name: "playSound",
+                        content: `    {
+        "type": "playSound",
+        "url": "filename"
     }`
                     },
                     {
